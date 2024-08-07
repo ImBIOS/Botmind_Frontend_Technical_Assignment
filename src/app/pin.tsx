@@ -15,7 +15,7 @@ type PinProps = {
 	rotate?: `${number}deg`;
 };
 
-function Pin({ size = 20, rotate }: PinProps) {
+function Pin({ size = 20, rotate }: Readonly<PinProps>) {
 	return (
 		<svg height={size} viewBox="0 0 24 24" style={{ ...pinStyle, rotate }}>
 			<title>Pin</title>
